@@ -26,3 +26,15 @@ Class Name extends React.Component{
 
 export default Name; // 외부에서 import 할 수 있게 변경
 ```
+```javascript
+// 함수형 컴포넌트
+const Name = () => {
+    const [array,setArray] = useState('');
+
+    return(
+        <>
+            ㅇㄻㄴㄻㄴㅇ
+        </>
+    )
+}
+```
