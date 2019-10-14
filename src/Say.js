@@ -4,10 +4,10 @@ const Say = () =>{
     const [alert,setAlert] = useState('');
     const [useColor,setUseColor] = useState('');
     const enter = () => {
-        setAlert('입 장 하셨습니다!');
+        setAlert('입장 하셨습니다!');
     }
     const exit = () => {
-        setAlert('퇴 장 하셨습니다!');
+        setAlert('퇴장 하셨습니다!');
     }
     const red = () => {
         setUseColor('red');

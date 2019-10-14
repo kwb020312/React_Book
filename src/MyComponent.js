@@ -7,7 +7,7 @@ const MyComponents = ({name, children}) => {
             <h1>{name} 의 새롭고 멋진 컴포넌트</h1>
             <h2>{children}</h2>
         </div>
-    )
+    )//ㅁㄴㅁ
 
 };
 
