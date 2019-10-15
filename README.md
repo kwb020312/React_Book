@@ -38,3 +38,10 @@ const Name = () => {
     )
 }
 ```
+---
+Ref를 활용하여 포커싱을 줌
+```javascript
+import useRef from 'react';
+const inputref = useRef();
+inputref.current.focus();
+```
