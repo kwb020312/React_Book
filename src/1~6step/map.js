@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react';
+import React,{useState,useRef,memo} from 'react';
 
 const Map = () => {
     const [names,setNames] = useState([
@@ -10,7 +10,7 @@ const Map = () => {
     const onref = useRef();
     const [usein,setUsein] = useState('');
     const [prevId,setPrevId] = useState(4);
-    const nameList = names.map(name => (<li onDoubleClick={() => {dbclick(name.id)}} key={names.id}>{name.title}</li>));
+    const nameList = names.map(name => (<li onDoubleClick={() => dbclick(name.id)} key={names.id}>{name.title}</li>));
     const onchange = (e) => {
         setUsein(e.target.value);
     }
@@ -29,6 +29,7 @@ const Map = () => {
     const dbclick = (id) => {
         const nextNames = names.filter(name => name.id !== id);
         setNames(nextNames);
+        console.log('더블클릭');
     }
     return (
         <>
@@ -41,4 +42,4 @@ const Map = () => {
     )
 }
 
-export default Map;
+export default memo(Map);

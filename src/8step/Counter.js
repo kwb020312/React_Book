@@ -5,11 +5,14 @@ const Counter = () => {
     const onclick = () => {
         setCount(count+1);
     };
-
+    const down = () => {
+        setCount(prevState => (prevState-1))
+    }
     return(
         <div>
-            <h1>{count}</h1>
-            <button onClick={onclick}>카운트 업!</button>
+            <h1>{`현재 카운터 값은${count} 입니다.`}</h1>
+            <button onClick={onclick}>+</button>
+            <button onClick={down}>-</button>
         </div>
     )
 };
