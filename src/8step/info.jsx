@@ -1,12 +1,14 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState, useEffect,memo} from 'react';
 
 const Info = () => {
     const [name,setName] = useState('');
     const [nickname,setNickname] = useState('');
     useEffect(() => {
-        console.log('렌더링 완료');
+        setNickname('Chobby');
+        console.log('componentDidMount');
         return () => {
-            console.log('언마운트');
+            setNickname('');
+            console.log('componentWillUnmount');
         }
     },[]);
     const chname = (e) => {
@@ -26,4 +28,4 @@ const Info = () => {
     )
 }
 
-export default Info;
+export default memo(Info);
