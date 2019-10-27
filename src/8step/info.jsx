@@ -1,15 +1,18 @@
 import React,{useState, useEffect,memo} from 'react';
-
+// useEffect 는 LifeCycle 을 사용하기위해 import 해온다
 const Info = () => {
     const [name,setName] = useState('');
     const [nickname,setNickname] = useState('');
     useEffect(() => {
+        // componentDidMount 의 과정
         setNickname('Chobby');
         console.log('componentDidMount');
         return () => {
+            // componentWillUnmount 의 과정이다
             setNickname('');
             console.log('componentWillUnmount');
         }
+        // 빈 괄호는 DidMount 를 위해 필요하며 여기다 넣는 State 는 호출을 담당하는 State이다
     },[]);
     const chname = (e) => {
         setName(e.target.value);
