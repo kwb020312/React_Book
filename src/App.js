@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
-import SassComponent from './9step/SassComponent'
-import './9step/App.css'
+import React from 'react';
+import StyledComponent from './9step/StyledComponent'
+
 const App = () => {
   return (
     <>
-      <SassComponent/>
+      <StyledComponent/>
     </>
   )
 }
