@@ -14,7 +14,6 @@
     "babel-preset-react-app": "^9.0.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
-    "classnames": "^2.2.6",
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "5.1.0",
@@ -84,7 +83,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "classnames": "^2.2.6",
+    "node-sass": "^4.13.0",
+    "react-icons": "^3.8.0"
   },
   "jest": {
     "roots": [

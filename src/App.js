@@ -1,10 +1,10 @@
 import React from 'react';
-import StyledComponent from './9step/StyledComponent'
-
+import './10step/index.css'
+import TodoTemplate from './10step/src/components/TodoTemplate'
 const App = () => {
   return (
     <>
-      <StyledComponent/>
+      <TodoTemplate>Todo App을 만들자!</TodoTemplate>
     </>
   )
 }
