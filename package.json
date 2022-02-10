@@ -92,7 +92,7 @@
   },
   "devDependencies": {
     "classnames": "^2.2.6",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react-icons": "^3.8.0"
   },
   "jest": {
